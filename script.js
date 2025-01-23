@@ -30,13 +30,7 @@ function loco(){
 }
 loco();
 
-var clutter = "";
-
-document.querySelector("#page2>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`;
-
-    document.querySelector("#page2>h1").innerHTML = clutter;
-});
+// Removed the block that generates HTML content for #page2>h1
 
 gsap.to("#page2>h1>span",{
     scrollTrigger:{
@@ -199,13 +193,7 @@ function canvas(){
 }
 canvas();
 
-var clutter = "";
-
-document.querySelector("#page4>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`;
-
-    document.querySelector("#page4>h1").innerHTML = clutter;
-});
+// Removed the block that generates HTML content for #page4>h1
 
 gsap.to("#page4>h1>span",{
     scrollTrigger:{
@@ -601,13 +589,7 @@ function canvas1(){
 }
 canvas1();
 
-var clutter = "";
-
-document.querySelector("#page6>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`;
-
-    document.querySelector("#page6>h1").innerHTML = clutter;
-});
+// Removed the block that generates HTML content for #page6>h1
 
 gsap.to("#page6>h1>span",{
     scrollTrigger:{
