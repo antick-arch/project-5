@@ -31,9 +31,9 @@ body {
     font-display: swap;
 }
 @font-face {
-    font-family: 'RemixIcon';
-    src: url('https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.woff') format('woff');
+    font-family: 'Remixicon';
+    src: url('https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -454,7 +454,7 @@ body {
 
 /* Example usage */
 .ri {
-    font-family: 'RemixIcon';
+    font-family: 'Remixicon';
 }
 
 /* Media Queries for responsiveness */
