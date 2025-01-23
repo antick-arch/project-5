@@ -30,6 +30,13 @@ body {
     src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
     font-display: swap;
 }
+@font-face {
+    font-family: 'RemixIcon';
+    src: url('https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 #page1
 {
     height: 100vh;
@@ -443,6 +450,11 @@ body {
 
 .page14-inner:hover .center14{
     height: 100%;
+}
+
+/* Example usage */
+.ri {
+    font-family: 'RemixIcon';
 }
 
 /* Media Queries for responsiveness */
