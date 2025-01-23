@@ -47,6 +47,11 @@ body {
             width: 100%;
         }
     }
+    /* Chrome specific fix */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        height: auto;
+        width: 100%;
+    }
 }
 #page1>nav{
     display: flex;

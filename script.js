@@ -4,7 +4,10 @@ function loco(){
     // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
     const locoScroll = new LocomotiveScroll({
         el: document.querySelector("#main"),
-        smooth: true
+        smooth: true,
+        // Add compatibility for older browsers
+        getDirection: true,
+        getSpeed: true
     });
 
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
