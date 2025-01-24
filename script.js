@@ -840,3 +840,7 @@ function canvas2() {
     });
 }
 canvas2();
+
+document.querySelector('#right-nav>button:last-child').addEventListener('click', function() {
+    document.querySelector('#nav-menu').classList.toggle('show');
+});

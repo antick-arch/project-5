@@ -97,6 +97,12 @@ body {
 #right-nav>button>i {
     font-size: 1.5em; /* Adjust the size as needed */
 }
+#right-nav>button:hover {
+    background-color: #fff;
+    color: #0b48ed;
+    border: 1px solid #0b48ed;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
 .bottom-page1{
     position: absolute;
     bottom: 12%;
@@ -131,6 +137,11 @@ body {
     color: #0b48ed;
     font-size: 16px;
     font-family: b;
+}
+.bottom-page1-inner>button:hover {
+    background-color: #0b48ed;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .bottom-page1-inner>h4{
     font-size: 1.3vw;
@@ -459,6 +470,50 @@ body {
 /* Example usage */
 .ri {
     font-family: 'Remixicon';
+}
+
+/* Collapsible nav menu styles */
+#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10vh;
+    right: 30px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-family: a;
+    font-size: 18px;
+}
+
+#nav-menu a:hover {
+    color: #0b48ed;
+    transition: color 0.3s ease-in-out;
+}
+
+#nav-menu.show {
+    display: flex;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media Queries for responsiveness */
