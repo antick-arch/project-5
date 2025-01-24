@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Team</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <style>
+        .nav-links.active {
+            background-color:#455278f0;
+            animation: slideIn 0.3s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="about/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="ri-menu-fill"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <h1>Leadership Team</h1>
@@ -49,7 +82,7 @@
 
             <div class="team-member">
                 <img src="about/fahad.jpg" alt="Fahad">
-                <h3>Md Safur Rahama Fahad</h3>
+                <h3>Md Saifur Rahman Fahad</h3>
                 <p>executive member</p>
                 <div class="social-icons">
                     <a href="#">🔗</a>
@@ -111,5 +144,33 @@
             <!-- Add more team members as needed -->
         </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="about/logo.png" alt="logo">
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; This site is designed & developed by <em>Antick Chandra Kuri</em></p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            navLinks.style.transition = 'all 0.3s ease-in-out';
+        });
+    </script>
 </body>
 </html>
