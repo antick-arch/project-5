@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Menu button clicked!");
     });
 
-    const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, libero.";
+    const text = "Neutron Knights - Quantum Warriors, Navigators of the Unknown";
     const textContainer = document.querySelector(".page2 .animated-text");
     text.split("").forEach((char, index) => {
         const span = document.createElement("span");
