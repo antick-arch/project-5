@@ -10,16 +10,15 @@ body {
     overflow-x: hidden;
     background: linear-gradient(135deg, #0b48ed, #000);
     color: #fff;
-    height: 100vh;
 }
 #page1, .page2, .page3, .page4, .page5 {
-    height: 100vh;
+    min-height: 100vh; /* Ensure it takes full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#main {
+#page1 {
     position: relative;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.8);
@@ -31,6 +30,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#page1 video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(50%);
+}
+#page1::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#main {
+    position: relative;
+    z-index: 2;
 }
 nav {
     position: fixed;
@@ -62,18 +85,6 @@ nav button:hover {
     background-color: #fff;
     color: #0b48ed;
 }
-header {
-    text-align: center;
-    padding: 2em;
-}
-header h1 {
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-header p {
-    margin: 1em 0;
-    font-size: 1.2em;
-}
 video {
     position: fixed;
     top: 0;
@@ -91,7 +102,6 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 #site-name {
@@ -123,9 +133,6 @@ video {
     }
 }
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
     nav img {
         max-width: 80px;
     }
@@ -153,13 +160,77 @@ video {
     #site-name h3 {
         font-size: 1em;
     }
-    header {
-        padding: 1em;
+}
+
+.page2 {
+    height: 100vh; /* Ensure it takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(135deg, #000, #0b48ed);
+    color: #fff;
+    z-index: 2; /* Ensure it is above the video */
+}
+.page2, .page3, .page4, .page5 {
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(135deg, #000, #0b48ed);
+    color: #fff;
+    z-index: 2; /* Ensure it is above the video */
+}
+.page2 img {
+    max-width: 300px;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.page2 .animated-text {
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page2 .animated-text span {
+    margin: 0 0.2em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    header h1 {
-        font-size: 1.5em;
-    }
-    header p {
-        font-size: 1em;
-    }
+}
+.page2 .animated-text span:nth-child(1) { animation-delay: 0.1s; }
+.page2 .animated-text span:nth-child(2) { animation-delay: 0.2s; }
+.page2 .animated-text span:nth-child(3) { animation-delay: 0.3s; }
+/* Add more nth-child rules as needed */
+.page2 p {
+    font-size: 1.2em;
+    margin: 1em 0;
+    max-width: 600px;
+    text-align: center;
+}
+.page2 button {
+    background-color: #0b48ed;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.page2 button:hover {
+    background-color: #fff;
+    color: #0b48ed;
 }
