@@ -11,7 +11,7 @@ body {
     background: linear-gradient(135deg, #0b48ed, #000);
     color: #fff;
 }
-#page1, .page2, .page3, .page4, .page5 {
+#page1, .page2, .page4, .page5 {
     min-height: 100vh; /* Ensure it takes full viewport height */
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ video {
     color: #fff;
     z-index: 2; /* Ensure it is above the video */
 }
-.page2, .page3, .page4, .page5 {
+.page2, .page4, .page5 {
     min-height: 100vh; /* Ensure it takes full viewport height */
     display: flex;
     flex-direction: column;
@@ -273,5 +273,116 @@ video {
         padding: 0.3em 0.7em;
         font-size: 0.8em;
     }
+}}
+
+.page3 {
+    height: 130vh;
+    position: relative;
+    width: 100vw;
+    padding: 5em 2em;
+    background: linear-gradient(135deg, #000, #0b48ed);
+    color: #fff;
+    z-index: 2; /* Ensure it is above the video */
 }
+.page3>h1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 4vw;
+    color: #ffffff;
+    font-weight: 100;
+}
+.page3-inner{
+    display: flex;
+    top: 18%;
+    position: relative;
+    margin-bottom: 2vw;
+    height: 24%;
+    width: 100%;
+}
+.left3{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    left: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.left3>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.right3{
+    padding-top: 5vw;
+    color: #ffffff;
+    left: 50%;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+.right3>h4{
+    font-weight: 100;
+}
+.right3>h1{
+    font-size: 2vw;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .page3>h1{
+        font-size: 5vw;
+    }
+    .right3>h1{
+        font-size: 2vw;
+    }
+    .right3>h4{
+        font-size: 1.5vw;
+    }
+
+}
+@media (max-width: 768px) {
+    .page3>h1{
+        font-size: 6vw;
+    }
+    .right3>h1{
+        font-size: 4vw;
+    }
+    .right3>h4{
+        font-size: 2vw;
+    }
+
+}
+@media (max-width: 480px) {
+    .page3 {
+        height: 130vh;
+        position: relative;
+        width: 100vw;
+        padding: 0em 1em;
+        background: linear-gradient(135deg, #000, #0b48ed);
+        color: #fff;
+        z-index: 2;
+    }
+    .page3-inner {
+        display: flex;
+        top: 18%;
+        position: relative;
+        margin-bottom: 7vw;
+        height: 24%;
+        width: 100%;
+    }
+    .page3>h1{
+        font-size: 11vw;
+        text-align: center;
+    }
+    
+    .right3>h1{
+        font-size: 5vw;
+    }
+    .right3>h4{
+        font-size: 3vw;
+    }
+
 }
