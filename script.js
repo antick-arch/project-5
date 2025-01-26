@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.querySelector("nav button");
+    const menu = document.querySelector("nav .menu");
     menuButton.addEventListener("click", () => {
-        alert("Menu button clicked!");
+        menu.classList.toggle("show");
     });
 
     const text = "Neutron Knights - Quantum Warriors, Navigators of the Unknown";
