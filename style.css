@@ -386,3 +386,233 @@ video {
     }
 
 }
+.page4 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(135deg, #0b48ed, #000);
+    color: #fff;
+    z-index: 2;
+}
+.page4 h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+.page4 p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin-bottom: 1em;
+}
+.page4 .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+.page4 .feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    text-align: left;
+}
+.page4 .feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.page4 .feature p {
+    font-size: 1em;
+}
+/* Responsive Design for Page 4 */
+@media (max-width: 1024px) {
+    .page4 h2 {
+        font-size: 2.5em;
+    }
+    .page4 p {
+        font-size: 1em;
+    }
+    .page4 .feature h3 {
+        font-size: 1.3em;
+    }
+    .page4 .feature p {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 768px) {
+    .page4 h2 {
+        font-size: 2em;
+    }
+    .page4 p {
+        font-size: 0.9em;
+    }
+    .page4 .feature h3 {
+        font-size: 1.2em;
+    }
+    .page4 .feature p {
+        font-size: 0.8em;
+    }
+    .page4 .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .page4 h2 {
+        font-size: 1.8em;
+    }
+    .page4 p {
+        font-size: 0.8em;
+    }
+    ..page4 .feature h3 {
+        font-size: 1.1em;
+    }
+    .page4 .feature p {
+        font-size: 0.7em;
+    }
+}
+.page5 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(135deg, #000, #0b48ed);
+    color: #fff;
+    z-index: 2;
+}
+.page5 h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+.page5 .achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+.page5 .achievement {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    text-align: left;
+}
+.page5 .achievement img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.page5 .achievement p {
+    font-size: 1em;
+}
+/* Responsive Design for Page 5 */
+@media (max-width: 1024px) {
+    .page5 h2 {
+        font-size: 2.5em;
+    }
+    .page5 .achievement p {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 768px) {
+    .page5 h2 {
+        font-size: 2em;
+    }
+    .page5 .achievement p {
+        font-size: 0.8em;
+    }
+    .page5 .achievements {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .page5 h2 {
+        font-size: 1.8em;
+    }
+    .page5 .achievement p {
+        font-size: 0.7em;
+    }
+}
+
+/* Standard Design Enhancements */
+button {
+    background-color: #0b48ed;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: #fff;
+    color: #0b48ed;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    max-width: 800px;
+    text-align: center;
+    color: #ddd;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}
